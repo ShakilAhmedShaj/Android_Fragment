@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/LV_ID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:listSelector="#64ffda" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <fragment
+            android:name="com.shajt3ch.android_fragment.SunFragment"
+            android:id="@+id/frag_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </fragment>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
